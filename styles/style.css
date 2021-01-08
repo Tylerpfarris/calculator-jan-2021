@@ -5,29 +5,47 @@ body {
     --color2: hsla(207, 67%, 44%, 1);
     --color3: hsla(200, 61%, 56%, 1);
     --color4: hsla(187, 41%, 94%, 1);
-    --color5: hsla(170, 28%, 95%, 1); */
+    --color5: hsla(170, 28%, 95%, 1); 
 /* 
     /* --color1: hsla(45, 86%, 83%, 1);
     --color2: hsla(135, 65%, 98%, 1);
     --color3: hsla(315, 37%, 86%, 1);
     --color4: hsla(45, 73%, 98%, 1);
     --color5: hsla(224, 40%, 79%, 1); */
-    
+/*
+    --color1: hsla(221, 37%, 45%, 1);
+    --color2: hsla(240, 35%, 46%, 1);
+    --color3: hsla(294, 44%, 33%, 1);
+    --color4: hsla(307, 21%, 49%, 1);
+    --color5: hsla(19, 90%, 70%, 1);
+    */
+
+    --color1: hsla(161, 19%, 69%, 1);
+    --color2: hsla(8, 66%, 73%, 1);
+    --color3: hsla(9, 61%, 80%, 1);
+    --color4: hsla(11, 50%, 87%, 1);
+    --color5: hsla(26, 47%, 97%, 1);
+    --color6: hsla(27, 47%, 43%, 1);
+
+
     --header-height: 80px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
     --gutter: 30px;
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+   background-image: linear-gradient(var(--color4), var(--color2));
 }
 
 main {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    
+  
 }
 
 section {
@@ -62,7 +80,10 @@ footer {
 
 
 h2 {
-    font-size: 1.8rem;
+    color: var(--color4);
+    text-shadow: 3px 4px var(--color1);
+    text-transform: uppercase;
+    font-size: 4rem;
     font-weight: bold;
 }
 
@@ -117,3 +138,38 @@ footer {
     }
 
   }
+
+/*
+CALCULATOR
+*/
+
+  .main-section {
+    margin-top: 200px;
+      background-image: linear-gradient(var(--color2), var(--color4));
+  }
+
+  .input-field-1 , .input-field-2 {
+      color: var(--color5); ;
+      font-size: 40px;
+      text-align:center;
+      background-color: var(--color1);
+      margin: 20px;
+
+  }
+
+  button {
+      color: var(--color6);
+      text-align: center;
+      font-size: 35px;
+      background-color: var(--color4);
+  }
+
+  #sumField {
+       text-shadow: var(--color4);
+       font-size: 40px;
+       color: var(--color2);
+  }
+
+img {
+    background-color: var(--color3);
+}
