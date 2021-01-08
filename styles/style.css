@@ -144,8 +144,11 @@ CALCULATOR
 */
 
 
+
+
   .main-section {
-    margin-top: 100px;
+      
+      margin-top: 100px;
       background-image: linear-gradient(var(--color2), var(--color4));
   }
 
