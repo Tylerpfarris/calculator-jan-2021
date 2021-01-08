@@ -1,54 +1,33 @@
-// import functions and grab DOM elements
+
 
 // initialize state
 
 // set event listeners to update state and DOM
 
+
+
+
 const addButton = document.getElementById('add-button')
 const subtractButton = document.getElementById('subtract-button')
 const multiplyButton = document.getElementById('multiply-button')
 const divideButton = document.getElementById('divide-button')
-const Field1 = document.getElementById('input-1')
-const Field2 = document.getElementById('input-2')
-const sum = document.getElementById('sumField')
 
-addButton.addEventListener('click', () => {
+//addition button
 
-  const fieldValue1 = Field1.valueAsNumber;
-  const fieldValue2 = Field2.valueAsNumber;
 
-  const sum = fieldValue1 + fieldValue2;
+import { addClickHandler, subtractClickHandler, multiplyClickHandler, divisionClickHandler } from './handlers.js';
 
-  sumField.textContent = sum;
-});
+addButton.addEventListener('click', addClickHandler);
 
-subtractButton.addEventListener('click', () => {
+//subtraction button
 
-  const fieldValue1 = Field1.valueAsNumber;
-  const fieldValue2 = Field2.valueAsNumber;
+subtractButton.addEventListener('click', subtractClickHandler);
 
-  const sum = fieldValue1 - fieldValue2;
+//multiplication button
 
-  sumField.textContent = sum;
-});
+multiplyButton.addEventListener('click', multiplyClickHandler);
 
-multiplyButton.addEventListener('click', () => {
 
-  const fieldValue1 = Field1.valueAsNumber;
-  const fieldValue2 = Field2.valueAsNumber;
+//division button 
 
-  const sum = fieldValue1 * fieldValue2;
-
-  sumField.textContent = sum;
-});
-
-divideButton.addEventListener('click', () => {
-
-  const fieldValue1 = Field1.valueAsNumber;
-  const fieldValue2 = Field2.valueAsNumber;
-
-  const sum = fieldValue1 / fieldValue2;
-
-  sumField.textContent = sum;
-});
-
+divideButton.addEventListener('click', divisionClickHandler);
